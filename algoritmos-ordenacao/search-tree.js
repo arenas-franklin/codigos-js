@@ -28,3 +28,16 @@ console.log(arvore);
 
 insert(arvore,8);
 console.log(arvore);
+
+
+function search(tree, value){
+    if(!tree.value || tree.value == value){
+        return tree.value;
+    }
+    if(value < tree.value){
+        return search(tree.left, value);
+    }
+    return search(tree.right, value);
+}
+
+console.log(search(arvore, 14));
