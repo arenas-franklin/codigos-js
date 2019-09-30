@@ -48,7 +48,7 @@ function heapSort(input){
 }
 
 
-var arr = [3,0,2,5,-1,4,1];
+let arr = [3,0,2,5,-1,4,1];
 console.log(arr);
 heapSort(arr);
 console.log(arr);
